@@ -1,6 +1,6 @@
-﻿namespace Journey.Data.Model
+﻿namespace Journey.Data.Models
 {
-    public class UserStats
+    public class UserStatsDto
     {
         public int NumberOfJournals { get; set; }
         public int NumberOfReplies { get; set; }

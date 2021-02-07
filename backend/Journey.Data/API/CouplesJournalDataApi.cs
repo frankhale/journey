@@ -78,12 +78,12 @@ namespace Journey.Data.API
         }
         #endregion
 
-        public UserStats GetUserStats(string userName)
+        public UserStatsDto GetUserStats(string userName)
         {
             var journals = _db.JournalEntries.Count(x => x.UserName == userName && x.Status.Value != "Draft");
             var replies = _db.JournalReplies.Count(x => x.UserName == userName);
 
-            return new UserStats
+            return new UserStatsDto
             {
                 NumberOfJournals = journals,
                 NumberOfReplies = replies

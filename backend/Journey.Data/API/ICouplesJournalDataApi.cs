@@ -12,7 +12,7 @@ namespace Journey.Data.API
         void Add<T>(T entity) where T : Entity;
         void Delete<T>(T entity) where T : Entity;
 
-        UserStats GetUserStats(string userName);
+        UserStatsDto GetUserStats(string userName);
 
         #region Journal
         Task<IEnumerable<JournalEntry>> GetPagedJournalEntriesAsync(int pageNumber, int pageSize, string filter);
