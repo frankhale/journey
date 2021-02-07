@@ -41,7 +41,7 @@ namespace Journey.Identity
                 {
                     ClientId = "interactive",
                     AllowedCorsOrigins = new List<string> {
-                        "https://localhost:4200"
+                        "https://localhost:4200"                        
                     },
                     AllowedGrantTypes = GrantTypes.Code,
                     RequirePkce = true,
